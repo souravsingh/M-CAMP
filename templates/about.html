@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Multi-label classification of peptides</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet"  href="{{ url_for('static', filename='css/new.css') }}">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Multilabel Classification of <span class="logo_colour">Peptides</span></a></h1>
+          <h2>Classification of Peptide Activity</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="{{ url_for('main') }}">Home</a></li>
+	     <li><a href="{{ url_for('predict') }}">Activity Classifier</a></li>
+          <li><a href="{{ url_for('datas') }}">Dataset</a></li>
+          <li><a href="{{ url_for('help') }}">Help</a></li>
+          <li class="selected"><a href="about.html">About Us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+       <h3>Application Usage</h3>
+        <h4>Activity Predictor Usage</h4>
+        <p>Peptide Sequences must be entered in FASTA format only. The output will display all the predicted activity labels of the peptide.</p>
+        <p></p>
+        <h4>Dataset Usage</h4>
+        <p>Our dataset contains a collection of more than 3000 peptides comprising both AMPs and Non-AMPS. It has been curated from multiple sources like Uniprot, APD3, AVPpred, among others.</p>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="http://www.camp3.bicnirrh.res.in/index.php">CAMP</a></li>
+          <li><a href="http://aps.unmc.edu/AP/main.php">APD3</a></li>
+          <li><a href="http://www.uniprot.org/">UniProt</a></li>
+          <li><a href="http://crdd.osdd.net/servers/avppred/">AVPpred</a></li>
+        </ul>
+      
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1></h1>
+        <p>This product, "Multilabel Classification Of Peptides​" was built as a part of the curriculum for “Bachelor in
+Engineering​ ​ (Computer​ ​ Engineering)”​ ​ of​ ​ University​ ​ of​ ​ Pune. It was built in the span of 9 months by a team of 4 members from Vishwakarma Institute of Information Technology, Pune, India.</p>   
+	<p>The product was developed under the guidance of Prof.Leena Deshpande as an internal guide, Prof. V.K. Jayaraman from the CMS department in SPPU,Pune and Prof. Urmila Kulkarni-Kale from the Bioinformatics department in SPPU, Pune. We would also like to credit the Computer Engineering Department at Vishwakarma Institute of Information Technology for providing necessary infrastructure and facilites for the development of the product.</p>
+<B>DEVELOPERS:</B>
+<BR>
+<ol>
+<li><b>Sanika Kulkarni</b><br>Contact : kulkarnisanika99@gmail.com</li>
+<li><B>Devshree Khawase</B><br>Contact : chhakulykhavase@gmail.com </li>
+<li><B>Sakshi Jain</B><br>Contact : sakshi.j.sonia@gmail.com</li>
+<li><B>Sourav Singh</B><br>Contact : ssouravsingh12@gmail.com</li>
+</ol>
+   
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <a href="http://www.unipune.ac.in/">Savitribai Phule Pune University</a> | <a href="http://viit.ac.in/index.php">VIIT Pune</a>
+    </div>
+  </div>
+</body>
+</html>

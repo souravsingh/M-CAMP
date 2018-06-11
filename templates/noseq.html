@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Multi-label classification of peptides</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet"  href="{{ url_for('static', filename='css/new.css') }}">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="{{ url_for('main') }}">Multilabel Classification of <span class="logo_colour">Peptides</span></a></h1>
+          <h2>Classification of Peptide Activity</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="{{ url_for('main') }}">Home</a></li>
+	     <li class="selected"><a href="{{ url_for('predict') }}">Activity Classifier</a></li>
+          <li><a href="{{ url_for('datas') }}">Dataset</a></li>
+          <li><a href="{{ url_for('help') }}">Help</a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+         <h3>Application Usage</h3>
+        <h4>Activity Predictor Usage</h4>
+        <p>Peptide Sequences must be entered in FASTA format only. The output will display all the predicted activity labels of the peptide.</p>
+        <p></p>
+        <h4>Dataset Usage</h4>
+        <p>Our dataset contains a collection of more than 3000 peptides comprising both AMPs and Non-AMPS. It has been curated from multiple sources like Uniprot, APD3, AVPpred, among others.</p>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="http://www.camp3.bicnirrh.res.in/index.php">CAMP</a></li>
+          <li><a href="http://aps.unmc.edu/AP/main.php">APD3</a></li>
+          <li><a href="http://www.uniprot.org/">UniProt</a></li>
+          <li><a href="http://crdd.osdd.net/servers/avppred/">AVPpred</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        
+        <h1>NO SEQUENCE ENTERED</h1>
+
+
+
+        
+       
+ 
+
+    
+        
+      
+     </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+     <a href="http://www.unipune.ac.in/">Savitribai Phule Pune University</a> | <a href="http://viit.ac.in/index.php">VIIT Pune</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
