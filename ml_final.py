@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from skmultilearn.problem_transform import BinaryRelevance, LabelPowerset, ClassifierChain
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, f1_score
 
 from sklearn import metrics
 from sklearn.externals import joblib
@@ -23,7 +23,7 @@ y_pred =clf.predict(X_test).tocoo()
 
 print y_pred
 
-print accuracy_score(y_pred, y_test)
+print f1_score(y_pred, y_test, average='micro')
 
 # Start pickling
 joblib.dump(clf, 'ml_model.pkl')
